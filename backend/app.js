@@ -6,9 +6,12 @@ const cors = require('cors')
 
 app.use(express.json())
 app.use(cors({
-    origin: 'http://localhost:3000',
+    origin: 'http://deploy-vercel-link',
+    methods:["POST","GET"],
+    credential:true,
     optionsSuccessStatus: 200 // some legacy browsers (IE11, various SmartTVs) choke on 204
   }));
+monggose.coonect('mongodb+srv://Gopaldixit:<Gopalatlas>@cluster0.4iwukso.mongodb.net/?BookStoreretryWrites=true&w=majority')
 app.use('/api/v1',bookroutes)
 
 app.get('/',function(req,resp){

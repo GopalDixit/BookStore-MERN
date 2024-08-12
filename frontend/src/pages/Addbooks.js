@@ -20,7 +20,7 @@ const Addbooks = () => {
     e.preventDefault();
 
     try {
-      const response = await axios.post('http://localhost:5600/api/v1/add', data);
+      const response = await axios.post('https://bookstore-mernbe.onrender.com/api/v1/add', data);
 
       if (response) {
         console.log('Book added successfully:', response.data.message);

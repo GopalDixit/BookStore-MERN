@@ -15,7 +15,7 @@ const UpdateBook = ({ bookId, onCancel, onUpdate }) => {
   useEffect(() => {
     const fetchBookDetails = async () => {
       try {
-        const response = await axios.get(`http://localhost:5600/api/v1/read/${bookId}`);
+        const response = await axios.get(`https://bookstore-mernbe.onrender.com/api/v1/read/${bookId}`);
         const bookDetails = response.data.book;
         setFormData(bookDetails);
       } catch (error) {

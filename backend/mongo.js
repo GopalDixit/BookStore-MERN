@@ -1,5 +1,5 @@
 const mongoose = require('mongoose')
-mongoose.connect('mongodb://localhost:27017/BookStore')
+mongoose.connect('mongodb+srv://gopaldixit9450:N4tEEMO3UwssJiYP@admincluster.rgu9w.mongodb.net/BookStore?retryWrites=true&w=majority&appName=admincluster')
 .then(()=>{
     console.log("MongpDB Connected")
 })

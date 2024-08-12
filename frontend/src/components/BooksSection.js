@@ -5,7 +5,7 @@ import axios from 'axios';
 const BooksSection = ({ data,onDelete  }) => {
     const handleDelete = async (id) => {
         try {
-          const response = await axios.delete(`http://localhost:5600/api/v1/delete/${id}`);
+          const response = await axios.delete(`https://bookstore-mernbe.onrender.com/api/v1/delete/${id}`);
           if (response.status === 200) {
             console.log('Book deleted successfully:', response.data.message);
             onDelete(id); // Notify the parent component about the deleted book

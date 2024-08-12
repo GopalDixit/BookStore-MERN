@@ -8,7 +8,7 @@ const Books = () => {
   useEffect(() => {
     const fetchData = async () => {
       try {
-        const response = await axios.get('http://localhost:5600/api/v1/read');
+        const response = await axios.get('https://bookstore-mernbe.onrender.com/api/v1/read');
         console.log(response.data.books); // Log the data to the console
         setData(response.data.books);
       } catch (error) {

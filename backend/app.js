@@ -11,7 +11,7 @@ app.use(cors({
     credential:true,
     optionsSuccessStatus: 200 // some legacy browsers (IE11, various SmartTVs) choke on 204
   }));
-monggose.coonect('mongodb+srv://Gopaldixit:<Gopalatlas>@cluster0.4iwukso.mongodb.net/?BookStoreretryWrites=true&w=majority')
+monggose.coonect('mongodb+srv://Gopaldixit:<Gopalatlas>@cluster0.4iwukso.mongodb.net/BookStore?retryWrites=true&w=majority')
 app.use('/api/v1',bookroutes)
 
 app.get('/',function(req,resp){
